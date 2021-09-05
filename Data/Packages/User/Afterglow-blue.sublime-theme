@@ -1,0 +1,63 @@
+// Documentation at https://www.sublimetext.com/docs/themes.html
+{
+	"variables":
+	{
+	},
+	"rules":
+	[
+		{
+			"class": "title_bar",
+			"style": "light",
+		},
+		//Thiet lap background sidebar
+		{
+			"class": "sidebar_container",
+			"layer0.opacity": 1,
+			"layer0.tint": [40,42,57], 
+			"layer0.inner_margin": [1,5,2,1],
+			"content_margin": [0,4,0,0]
+		},
+		//Mau chu sidebar, font-size
+		{
+			"class": "sidebar_label",        
+			"font.size": 14,
+			// "color": [177,172,175],
+			"fg": "color(var(--background) blend(white 50%))",
+		},
+		{
+			// "fg": "color(var(--background) blend(white 20%))",
+			// "font.face": "var(font_face)",
+			// "font.size": "var(font_size)"
+		},
+		//Hover vao
+		{
+			"class": "sidebar_label",
+			"parents": [{"class": "tree_row","attributes": ["hover"]}],
+			"fg": "color(var(--background) blend(white 10%))",
+		},
+		//Mau folder
+		{
+			"class": "sidebar_label",
+			"parents": [{"class": "tree_row","attributes": ["expandable"]}],			
+			"fg": "color(var(--background) blend(white 35%))",
+		},
+		//Hover vao folder
+		{
+			"class": "sidebar_label",
+			"parents": [{"class": "tree_row","attributes": ["expandable","hover"]}],			
+			"fg": "color(var(--background) blend(white 10%))",
+		},
+		 // selected
+		 {
+		 	"class": "sidebar_label",
+		 	"parents": [{"class": "tree_row","attributes": ["selected"]}],
+		 	"fg": "color(var(--background) blend(white 10%))",
+		 },    
+		//- Active tab label
+		{
+			"class": "tab_label",
+			"parents": [{"class": "tab_control", "attributes": ["selected"]}],
+			"fg": "color(var(--background) blend(white 10%))",
+		},
+	]
+}

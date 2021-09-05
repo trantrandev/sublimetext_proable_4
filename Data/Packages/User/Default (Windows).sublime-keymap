@@ -1,0 +1,14 @@
+[
+	{"keys": ["ctrl+shift+i"], "command": "reindent" , "args": { "single_line": false } },
+	//add thu vien
+	{"keys": ["alt+f"], "command":"find_use"},
+	//mo ternus
+	{ 
+		"keys": ["alt+`"], "command": "toggle_terminus_panel"
+	},
+	//Dong cac tab, bao gom terminus
+	{ 
+		"keys": ["escape"], "command": "terminus_close", "context": [{ "key": "terminus_view"}]
+	}
+
+]
